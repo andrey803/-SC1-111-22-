@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table_base</title>
+    <style>
+      table {
+        margin: auto;
+        text-align: center;
+        border-collapse: separate;
+        width: 40%;
+        border: 1px solid grey;
+      }
+      td,
+      th {
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        <em>Прогоноз погоды</em>
+      </caption>
+      <thead>
+        <tr>
+          <th>Город</th>
+          <th>Утро</th>
+          <th>День</th>
+          <th>Вечер</th>
+          <th>Ночь</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Минск</b></td>
+          <td style="text-align: left">
+            -5<sup style="font-size: 9px">o</sup>
+          </td>
+          <td style="text-align: left">
+            +5<sup style="font-size: 9px">o</sup>
+          </td>
+          <td style="text-align: left" rowspan="2">+2<sup>&#176;</sup></td>
+          <td style="text-align: left">
+            -10<sup style="font-size: 9px">o</sup>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Брест</b></td>
+          <td style="text-align: left">0<sup>&#176;</sup></td>
+          <td style="text-align: left">+9<sup>&#176;</sup></td>
+          <td style="text-align: left">-4<sup>&#176;</sup></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
