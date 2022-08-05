@@ -1,0 +1,28 @@
+.primer {
+	text-align: right;
+}
+.ad {
+	font-family: Times New Roman;
+	text-align: right;
+}
+.tit{
+	margin-left: 25px;
+}
+
+.Ivanov{
+font-style: italic;
+text-decoration:underline ;
+}
+.text{
+font-size: 18px;
+font-style: italic;
+
+}
+span{
+	font-size: 18px;
+}
+.end{
+	font-family: 'Times New Roman';
+	font-size: 18px;
+	font-weight: bold;
+}
