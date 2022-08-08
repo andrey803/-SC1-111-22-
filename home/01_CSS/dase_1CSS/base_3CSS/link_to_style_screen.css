@@ -19,15 +19,17 @@
 								 .gb {
 									padding-left: 0;
 									margin-left: 0;
-									list;-style-type: none
+									list-style-type: none;
+									text-align: center;
 								 }
 
 								 .gb li {
-									 display: inline-block;
-								 }
-								 .g{
-									 padding: 0 0 0 650px;
-								 }
-								.b {
-								padding: 0 0 0 600px;
+									display: inline-block;
+
 								}
+								.g{
+								  float: left;
+								}
+							  .b {
+							  float: right;
+							  }

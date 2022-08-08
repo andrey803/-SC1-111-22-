@@ -1,0 +1,33 @@
+body{
+	font-family: sans-serif;
+					font-size: 14px;
+					background-color: #eee;
+				  }
+				  .Python {
+					float: right; /* Выравнивание по левому краю */
+				 }
+				 h1 {
+					width: 45%;
+					margin: 0;
+					padding: 0;
+				 }
+				 .im {
+					position: relative;
+
+				 }
+				 .gb {
+					padding-left: 0;
+					margin-left: 0;
+					list;-style-type: none
+				 }
+
+				 .gb li {
+					 display: inline-block;
+					 text-align: center;
+				 }
+				 .g{
+					float: left;
+				 }
+				.b {
+				float: right;
+				}
