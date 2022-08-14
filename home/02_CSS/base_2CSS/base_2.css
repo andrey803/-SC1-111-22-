@@ -1,0 +1,16 @@
+.block{
+	width: 350px;
+
+}
+
+
+.block_code{
+	width: 400px;
+	height: 68px;
+	background-color: black;
+color: green;
+margin: 20px;
+padding: 10px 0 10px 0;
+overflow: auto;
+
+}
