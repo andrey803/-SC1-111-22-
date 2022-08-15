@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>base_1</title>
     <style>
-
+       .form{
+	     width: 600px;
+	     overflow: hidden;
+       }
       .form_1
        {
         width: 300px;
@@ -18,7 +21,6 @@
 			width: 300px;
         height: 150px;
         float: right;
-		  margin-right: 750px;
 		}
 
       .form_3 {
@@ -29,26 +31,22 @@
       }
       .form_4 {
         width: 300px;
-        height: 250px;
+        height: 200px;
 		  float: right;
-		  margin-right: 750px;
       }
 		.form_5 {
         width: 300px;
-        height: 150px;
+        height: 300px;
 		  float: left;
-		  margin-top: 50px;
 
       }
 		.form_6 {
-        width: 400px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
 		  float: right;
-		  margin-right: 650px;
       }
 		.form_6cities{
 			text-align: right;
-			margin-right: -15px;
 		}
 
       p {
@@ -60,34 +58,30 @@
 		}
 
 		.form_7 {
-        width: 400px;
+        width: 300px;
         height: 200px;
 		  float: left;
-		  margin-top: 180px;
-
+		  clear: both;
+		  margin-top: 30px;
       }
 		.form_8 {
-        width: 400px;
-        height: 150px;
+        width: 300px;
 		  float: right;
-		  margin-right: 550px;
-		  margin-top: 180px;
-
+		  margin-top: 23px;
       }
 
     </style>
   </head>
 
   <body>
-	<div>
+	<div class="form">
     <div class="form_1">
       <p>Простая форма поиска с вариантами:</p>
       <form
         action="http://fe.it-academy.by/TestForm.php"
         name="form_search"
         method="post"
-        target="_blank"
-      >
+        target="_blank">
         <fieldset>
           <legend>Строка поиска</legend>
           <input type="text" maxlength="10" name="google" />
@@ -136,7 +130,7 @@
         </fieldset>
       </form>
     </div>
-	</div>
+
 
     <div class="form_3">
       <p>Простая форма авторизации:</p>
@@ -144,8 +138,7 @@
         action="http://fe.it-academy.by/TestForm.php"
         name="authorization"
         method="get"
-        target="_blank"
-      >
+        target="_blank">
         <fieldset>
           <legend>Авторизируйтесь</legend>
           <input
@@ -350,5 +343,7 @@
         </fieldset>
       </form>
     </div>
+	 </div>
+
   </body>
 </html>
