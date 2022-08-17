@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add_5</title>
+    <style>
+      h2 {
+        text-align: center;
+      }
+
+      .pasport {
+        width: 30px;
+      }
+      .pasport_1 {
+        width: 80px;
+      }
+      .date_1 {
+        width: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Заполните анкету</h2>
+    <div>
+      <div>
+        <form
+          action="http://fe.it-academy.by/TestForm.php"
+          name="Personal data"
+          method="post"
+          target="blank"
+        >
+          <fieldset>
+            <legend>Личные данные</legend>
+            <input
+              type="text"
+              maxlength="25"
+              name="surname"
+
+              autofocus
+              required
+				  placeholder="Фамилия"
+              pattern="^[А-Яа-я]+$"
+            /><br />
+            <input
+              type="text"
+              name="name"
+
+              maxlength="20"
+              required
+				  placeholder="Имя"
+              pattern="^[А-Яа-я]+$"
+            /><br />
+            <input
+              type="text"
+              name="patronymic"
+              maxlength="24"
+
+              required
+				  placeholder="Отчество"
+              pattern="^[А-Яа-я]+$"
+            />
+			</form>
+			<form
+			action="http://fe.it-academy.by/TestForm.php"
+			name="Personal data"
+			method="post"
+			target="blank"
+		 >
+
+            <fieldset>
+              <legend>Паспортные данные</legend>
+              <input
+                class="pasport"
+                type="text"
+                maxlength="2"
+                name="series"
+                required
+					 value="АА"
+
+                pattern="[A-Z]{2,}"
+              />
+
+              <input
+                class="pasport_1"
+                type="text"
+                maxlength="7"
+                name="number"
+                required
+					 value="1234567"
+                pattern="[0-9]{7,}"
+              />
+            </fieldset>
+			</form>
+
+			<form
+			action="http://fe.it-academy.by/TestForm.php"
+			name="Personal data"
+			method="post"
+			target="blank"
+		 >
+            <fieldset>
+              <legend>Дата рождения</legend>
+              <!--
+              <input
+                class="pasport"
+                type="text"
+                maxlength="4"
+                name="date"
+                required
+                placeholder="2000"
+                pattern="[0-9]{4}"
+              /><br />
+              <select name="month" size="1">
+                <br />
+                <optgroup label="">
+                  <option value="month">Январь</option>
+                  <option value="month">февраль</option>
+                  <option value="month">март</option>
+                </optgroup>
+              </select>
+              <br />
+
+              <input
+                class="date_1"
+                type="number"
+                name="number"
+                pattern="[1-31]"
+              />
+             -->
+
+              <input
+                type="date"
+                name="trip-start"
+                value="2022-08-17"
+                min="1920-01-01"
+                max="2018-12-31"
+              />
+            </fieldset>
+			</form>
+            <select
+              style="width: 50px"
+              name="nationality"
+              size="1"
+              required
+
+
+            >
+              <optgroup label="">
+                <option value="nationality 1">РБ</option>
+                <option value="nationality 2">РУС</option>
+                <option value="nationality 3">EN</option>
+              </optgroup>
+            </select>
+            <br />
+             <span>Адрес:</span><br />
+            <textarea name="adress" cols="30" rows="10" value="adress"></textarea>
+
+
+      </div>
+		<div>
+			<form
+			action="http://fe.it-academy.by/TestForm.php"
+			name="intresting"
+			method="post"
+			target="blank">
+	  <fieldset>
+			  <legend>Инстересы</legend>
+			  <fieldset><legend>Хобби:</legend>
+				<label>
+					<input type="checkbox" name="fishing" value="fishing"/>
+					Рыбалка</label><br />
+				 <label>
+					<input type="checkbox" name="astronomy" value="astronomy" />
+					Астрономия</label><br />
+					<label>
+						<input type="checkbox" name="diving" value="diving" />
+						Дайвинг</label><br />
+						<label>
+							<input type="checkbox" name="stamps"  value="stamps" />
+							Марки</label><br />
+			</fieldset>
+
+
+				<fieldset><legend>Домашние животные:</legend>
+					<select
+					name="animals"
+					size="12" multiple>
+					<optgroup label="Попугаи">
+					  <option value="animals parrot1">Волнистый</option>
+					  <option value="animals parrot2">Ара</option>
+					  <option value="animals parrot3">Неразлучник</option>
+					</optgroup>
+					<optgroup label="Рыба">
+						<option value="animals Fish_1">Караси</option>
+						<option value="animals Fish_2">Окуни</option>
+						<option value="animals Fish_3">Осетр</option>
+					 </optgroup>
+					 <optgroup label="Птицы">
+						<option value="animals birds_1">Стая ворон</option>
+						<option value="animals birds_2">Аист</option>
+						<option value="animals birds_3">Археоптерикс</option>
+					 </optgroup>
+				 </select>
+			 </fieldset>
+	</fieldset>
+		</div>
+		<div>
+			<form
+			action="http://fe.it-academy.by/TestForm.php"
+			name="parol"
+			method="post"
+			target="blank">
+	<fieldset>
+			  <legend>Данные для входа и восстановления пароля</legend>
+			  <input
+			  type="text"
+			  maxlength="20"
+			  name="log"
+			  id="login"
+			  required
+			  placeholder="Логин"
+			  pattern="^[A-Za-z]{5,}+$"
+			/>
+			<label for="login">Логин </label> <br>
+			<input
+			  type="password"
+			  id="pass"
+			  maxlength="20"
+			  name="password"
+			  required
+			  placeholder="Пароль"
+			  pattern="^[A-Za-z]{10,}+$"
+			  autocomplete="off"
+			/> <label for="pass">Пароль </label> <br />
+	</fieldset>
+			</div>
+			<div>
+				<form
+			action="http://fe.it-academy.by/TestForm.php"
+			name="coordinates"
+			method="post"
+			target="blank">
+				<fieldset>
+					<legend>Координаты:</legend>
+					<input
+					type="email"
+					name="email"
+					placeholder="Введите адрес почты"
+				 /> <br>
+				 <input
+					type="url"
+					name="url"
+					placeholder="Введите адрес сайта"
+				 />
+				</fieldset>
+			</div>
+			<div>
+				<form
+				action="http://fe.it-academy.by/TestForm.php"
+				name="numbers"
+				method="post"
+				target="blank">
+					<fieldset>
+						<legend>Цифры</legend>
+						<input
+						type="number"
+						name="number"
+						pattern=""
+					 /> <br>
+					 <input
+						type="range"
+						name="range"
+						min="1" max="10"
+					 />
+					</fieldset>
+			</div>
+			<div>
+				<form
+				action="http://fe.it-academy.by/TestForm.php"
+				name="control buttons"
+				method="post"
+				target="blank">
+					<fieldset>
+						<legend>Кнопки управления</legend>
+						<input
+						type="submit"
+
+						value="Отправить"
+					 />
+					 <input
+						type="submit"
+
+						value="Сбросить"
+					 /> <br>
+					 <input style="width:91px; height:51px; "
+						type="image"
+						src="img/mail-icon-ios-7.png"
+					 />
+
+					</fieldset>
+			</div>
+    </div>
+  </body>
+</html>
