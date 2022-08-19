@@ -1,0 +1,39 @@
+*{
+	margin: 2px;
+	padding: 0;
+}
+.nav{
+	width: 15em;
+	background-color:#cccccc ;
+float: left;
+margin-top: 0px;
+height: 353px;
+
+}
+.list{
+	margin-left: 43px;
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 10px;
+}
+.article_1{
+	background-color: #aaaaaa;
+	padding: 3px;
+
+}
+
+.color{ background-color: #dbdbdb;
+	width: 15em;
+	height: 400px;
+	margin-left: -3px;
+}
+.text{
+	padding: 17px;
+}
+.footer{width: 100%;
+background-color: #cccccc;
+}
+img{
+	float: right;
+	margin-top: 281px;
+}
