@@ -22,10 +22,9 @@ height: 353px;
 
 }
 
-.color{ background-color: #dbdbdb;
-	width: 15em;
-	height: 400px;
-	margin-left: -3px;
+.H {
+background-color: #cccccc;
+
 }
 .text{
 	padding: 17px;
@@ -35,5 +34,5 @@ background-color: #cccccc;
 }
 img{
 	float: right;
-	margin-top: 281px;
+	margin-top: 128px;
 }

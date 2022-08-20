@@ -25,13 +25,13 @@
   <body>
     <h2>Заполните анкету</h2>
     <div>
+		<form
+		action="http://fe.it-academy.by/TestForm.php"
+		name="Personal data"
+		method="post"
+		target="blank"
+	 >
       <div>
-        <form
-          action="http://fe.it-academy.by/TestForm.php"
-          name="Personal data"
-          method="post"
-          target="blank"
-        >
           <fieldset>
             <legend>Личные данные</legend>
             <input
@@ -62,13 +62,7 @@
 				  placeholder="Отчество"
               pattern="^[А-Яа-я]+$"
             />
-			</form>
-			<form
-			action="http://fe.it-academy.by/TestForm.php"
-			name="Personal data"
-			method="post"
-			target="blank"
-		 >
+
 
             <fieldset>
               <legend>Паспортные данные</legend>
@@ -79,7 +73,6 @@
                 name="series"
                 required
 					 value="АА"
-
                 pattern="[A-Z]{2,}"
               />
 
@@ -93,14 +86,7 @@
                 pattern="[0-9]{7,}"
               />
             </fieldset>
-			</form>
 
-			<form
-			action="http://fe.it-academy.by/TestForm.php"
-			name="Personal data"
-			method="post"
-			target="blank"
-		 >
             <fieldset>
               <legend>Дата рождения</legend>
               <!--
@@ -139,15 +125,8 @@
                 max="2018-12-31"
               />
             </fieldset>
-			</form>
-            <select
-              style="width: 50px"
-              name="nationality"
-              size="1"
-              required
-
-
-            >
+				<select
+				name="nationality">
               <optgroup label="">
                 <option value="nationality 1">РБ</option>
                 <option value="nationality 2">РУС</option>
@@ -157,15 +136,10 @@
             <br />
              <span>Адрес:</span><br />
             <textarea name="adress" cols="30" rows="10" value="adress"></textarea>
-
+			</fieldset>
 
       </div>
 		<div>
-			<form
-			action="http://fe.it-academy.by/TestForm.php"
-			name="intresting"
-			method="post"
-			target="blank">
 	  <fieldset>
 			  <legend>Инстересы</legend>
 			  <fieldset><legend>Хобби:</legend>
@@ -182,8 +156,6 @@
 							<input type="checkbox" name="stamps"  value="stamps" />
 							Марки</label><br />
 			</fieldset>
-
-
 				<fieldset><legend>Домашние животные:</legend>
 					<select
 					name="animals"
@@ -208,11 +180,6 @@
 	</fieldset>
 		</div>
 		<div>
-			<form
-			action="http://fe.it-academy.by/TestForm.php"
-			name="parol"
-			method="post"
-			target="blank">
 	<fieldset>
 			  <legend>Данные для входа и восстановления пароля</legend>
 			  <input
@@ -238,11 +205,6 @@
 	</fieldset>
 			</div>
 			<div>
-				<form
-			action="http://fe.it-academy.by/TestForm.php"
-			name="coordinates"
-			method="post"
-			target="blank">
 				<fieldset>
 					<legend>Координаты:</legend>
 					<input
@@ -258,11 +220,6 @@
 				</fieldset>
 			</div>
 			<div>
-				<form
-				action="http://fe.it-academy.by/TestForm.php"
-				name="numbers"
-				method="post"
-				target="blank">
 					<fieldset>
 						<legend>Цифры</legend>
 						<input
@@ -278,11 +235,6 @@
 					</fieldset>
 			</div>
 			<div>
-				<form
-				action="http://fe.it-academy.by/TestForm.php"
-				name="control buttons"
-				method="post"
-				target="blank">
 					<fieldset>
 						<legend>Кнопки управления</legend>
 						<input
@@ -299,7 +251,6 @@
 						type="image"
 						src="img/mail-icon-ios-7.png"
 					 />
-
 					</fieldset>
 			</div>
     </div>
