@@ -1,0 +1,70 @@
+
+
+.menu ul {
+	list-style-type: none;
+}
+.menu >ul {
+	display: flex;
+
+}
+.menu > ul li a {
+	display: block;
+	background-color: #d3d3d3;
+	padding: 5px 40px 5px 5px ;
+	font-size: 14px;
+	color: #89898f;
+	text-decoration: none;
+
+}
+.menu > ul  li {
+position: relative;
+
+}
+.menu_link{
+	border: solid 1px;
+	border-radius: 4px;
+	width: 60px;
+
+}
+ .sub_menu_link {
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 10px;
+}
+.menu li a:hover {
+background-color: black;
+color: aqua;
+box-shadow: 1px 2px 3px -4px black;
+transition: all 0.3s ease;
+}
+/*ease- - указывает эффект перехода с медленным началом, затем быстрым, а затем медленным завершением (по умолчанию)
+
+linear- задает эффект перехода с одинаковой скоростью от начала до конца
+
+ease-in- указывает эффект перехода с медленным стартом
+
+ease-out- указывает эффект перехода с медленным концом
+
+ease-in-out- указывает эффект перехода с медленным началом и концом
+
+cubic-bezier(n,n,n,n)- позволяет вам определять свои собственные значения в кубической функции Безье */
+
+.menu  li ul {
+position: absolute;
+right: 18px;
+width: 90px;
+list-style: none;
+opacity: 0;
+    visibility: hidden;
+	 transition-property: opacity, visibility;
+	 transition-duration: 0.75s;
+    transition-delay: 0.75s;
+
+	}
+	.menu li:hover > ul
+	{
+
+opacity: 1;
+visibility: visible;
+
+	}
