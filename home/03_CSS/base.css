@@ -1,10 +1,12 @@
 
 
-.menu ul {
-	list-style-type: none;
-}
+
 .menu >ul {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	list-style-type: none;
+	float: left;
 
 }
 .menu > ul li a {
@@ -19,6 +21,7 @@
 .menu > ul  li {
 position: relative;
 
+
 }
 .menu_link{
 	border: solid 1px;
@@ -30,6 +33,7 @@ position: relative;
 	border: solid 1px;
 	border-radius: 4px;
 	padding: 10px;
+
 }
 .menu li a:hover {
 background-color: black;
@@ -50,6 +54,8 @@ ease-in-out- указывает эффект перехода с медленн�
 cubic-bezier(n,n,n,n)- позволяет вам определять свои собственные значения в кубической функции Безье */
 
 .menu  li ul {
+	z-index: 1;
+
 position: absolute;
 right: 18px;
 width: 90px;
