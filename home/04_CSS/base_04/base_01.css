@@ -1,0 +1,26 @@
+.border_1{
+	border: solid 1px grey;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 43%;
+
+}
+.doc_pdf::after
+{content: url(img/pdf.png);}
+.list{
+	list-style: none;
+width: 170px;
+margin-left: -42px;
+}
+ .word:hover {
+	background: url(img/word.jfif) right no-repeat;
+
+	}
+	.pdf:hover {
+		background: url(img/pdf.png) right no-repeat;
+		width: 136px;
+		}
+		.page:hover {
+			background: url(img/page.gif) right no-repeat;
+			width: 80px;
+			}

@@ -2,12 +2,15 @@
 	margin: 2px;
 	padding: 0;
 }
+.H{
+	background-color:#cccccc ;
+}
 .nav{
 	width: 15em;
 	background-color:#cccccc ;
 float: left;
 margin-top: 0px;
-height: 353px;
+
 
 }
 .list{
@@ -19,6 +22,9 @@ height: 353px;
 .article_1{
 	background-color: #aaaaaa;
 	padding: 3px;
+margin-left: 16em;
+margin-top: 0.1em;
+padding: 0;
 
 }
 
@@ -34,5 +40,8 @@ background-color: #cccccc;
 }
 img{
 	float: right;
-	margin-top: 128px;
+	margin-top: 135px;
+}
+.clear{
+	clear: both;
 }
