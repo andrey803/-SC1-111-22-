@@ -1,0 +1,36 @@
+div{
+	display: flex;
+	justify-content: center;
+
+}
+table{
+	border-collapse: collapse;
+
+
+}
+th{
+	padding: 2px;
+}
+
+td{
+	border:dotted  1px ;
+	border-top: none;
+	border-left: none;
+}
+td:nth-child(6n){
+	border-right: none;
+}
+
+tr:nth-child(2n) { background-color:#d3d3d3;
+}
+th:nth-child(n+1) { background-color:#808080;
+}
+tr:hover{ background-color: rgb(13, 255, 0);}
+
+p{
+	display: flex;
+	justify-content: center ;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
