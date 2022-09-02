@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="base_01.css" media="screen" />
+
+    <title>add_01</title>
+    <style>
+      .border_1 {
+        border: solid 1px grey;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 43%;
+      }
+      .doc_pdf::after {
+        content: url(../../04_CSS/base_04/img/word.jfif);
+      }
+      a[href*="178.172.136.240"]::before {
+        content: url(../../04_CSS/base_04/img/r.png);
+      }
+      a[href^="https"]::before {
+        content: url(../../04_CSS/base_04/img/r.png);
+      }
+
+      a[href*="hcdev.ru/css/counter-increment"]::before {
+        content: url(../../04_CSS/base_04/img/r.png);
+      }
+
+      .list {
+        list-style: none;
+        width: 170px;
+        margin-left: -42px;
+      }
+      .word:hover {
+        background: url(../../04_CSS/base_04/img/word.jfif) right no-repeat;
+      }
+      .pdf:hover {
+        background: url(../../04_CSS/base_04/img/pdf.png) right no-repeat;
+        width: 136px;
+      }
+      .page:hover {
+        background: url(../../04_CSS/base_04/img/page.gif) right no-repeat;
+        width: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Форматы файлов</h1>
+      <div class="border_1">
+        <p>
+          DOC или .doc(от англ.
+          <a href="https://cdnjs.com/libraries/skeleton">document</a>-
+          расширение имени файла, используемое для файлов,<br />
+          представляющих текст, с разметкой или без. Расширения .DOC часто
+          использовалось для <br />
+          обозначения простых текстовых файлов без формирования, однако позже
+          стало <br />
+          использоваться для двоичных форматов с разметкой. <br />
+          <a href="">Документ MS Word</a
+          ><img src="../../04_CSS/base_04/img/word.jfif" alt="picture2" />
+        </p>
+      </div>
+      <div class="border_1">
+        <p>
+          Portable Document Format (
+          <a href="http://178.172.136.240/css/4">PDF</a>)- межплатформенный
+          формат электронных документов, разработанный фирмой Adobe Systems с
+          использованием ряда возможностей языка Postscript
+          <a class="doc_pdf" href="">Документ PDF</a>
+        </p>
+      </div>
+
+      <div class="border_1">
+        <p>
+          ZIP -популярный формат сжатия данных и архивации файлов. Файл в этом
+          формате обычно имеет расширение
+          <a href="https://hcdev.ru/css/counter-increment/">zip</a>
+          и хранит в сжатом или несжатом виде один или несколько файлов, которое
+          можно из него извлечь путем распоковки с помощью специальной
+          программы. <br />
+          <a href="">Архив</a
+          ><img src="../../04_CSS/base_04/img/page.gif" alt="picture5" />
+        </p>
+      </div>
+      <div>
+        <h2>Это список файлов</h2>
+        <ul class="list">
+          <li class="word">
+            <img src="../../04_CSS/base_04/img/list.jfif" alt="" /><a href=""
+              >Документ MS Word</a
+            >
+          </li>
+          <li class="pdf">
+            <img src="../../04_CSS/base_04/img/list.jfif" alt="" /><a href=""
+              >Документ PDF</a
+            >
+          </li>
+          <li class="page">
+            <img src="../../04_CSS/base_04/img/list.jfif" alt="" /><a href=""
+              >Архив</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
