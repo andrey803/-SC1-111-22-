@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="base_03.css" media="screen" />
+
+    <title>add_02</title>
+    <style>
+      table {
+        counter-reset: counter 65;
+      }
+      .chees {
+        border: solid 3px;
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+      }
+      .chees td {
+        border: solid 1px;
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+      }
+      td {
+        text-align: center;
+      }
+      tr:nth-child(odd) td:nth-child(odd) {
+        color: white;
+      }
+      tr:nth-child(even) td:nth-child(even) {
+        color: white;
+      }
+
+      td::after {
+        counter-increment: counter -1;
+        content: counter(counter);
+      }
+
+      .chees tr:nth-child(odd) td:nth-child(odd) {
+        background: black;
+      }
+      .chees tr:nth-child(even) td:nth-child(even) {
+        background: black;
+      }
+
+      /*Чтобы использовать счетчик, его необходимо сначала инициализировать значением со свойством counter-reset. Затем значение счетчика может быть увеличено или уменьшено с помощью свойства counter-increment. Текущее значение счетчика отображается с помощью функции counter() или counters(), обычно в свойстве содержимого псевдоэлемента.*/
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <table class="chees">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
